@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<!-- ICS2O-Unit2-04-HTML-MDL -->
+<!-- ICS2O-Assignment-02-HTML-MDL -->
 <html lang="en-ca">
 
 <head>
   <meta charset="utf-8" />
-  <meta name="description" content="Area Of Triangle, PHP " />
+  <meta name="description" content="Area Of Circle, PHP " />
   <meta name="keywords" content="mths, icd2o" />
   <meta name="author" content="Joyce Nkengbeza" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,7 +30,7 @@
     sizes="16x16"
     href="./favicon-16x16new.png" />
   <link rel="manifest" href="./site.webmanifest" />
-  <title>Area Of Triangle In PHP</title>
+  <title>Area Of Circle In PHP</title>
 </head>
 
 <body>
@@ -38,7 +38,7 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Area Of Triangle, PHP</span>
+        <span class="mdl-layout-title">Area Of Circle, PHP</span>
       </div>
     </header>
     <main class="mdl-layout__content">
@@ -48,16 +48,12 @@
       <div class="page-content-php">
         <div id="area-triangle">
           <?php
-          $baselength = $_GET["base-length"];
-          $heightlength = $_GET["height-length"];
+          $radiuslength = $_GET["radius-length"];
           
           // process
-          $area = ($baselength * $heightlength) /2;
+          $area = ($radiuslength * $radiuslength) * M_PI;
           // output 
-          echo "If a Triangle has a base length of " . $baselength . " cm and a height of " . $heightlength . " cm:";
-          echo "<br />";
-          echo "<br />";
-          echo "The area of the Triangle is " . $area . " cm².";
+          echo "The area of the Circle is " . $area . " cm².";
           ?>
         </div>
         <div class="page-content-answer">
