@@ -43,10 +43,10 @@
     </header>
     <main class="mdl-layout__content">
       <div class="right-image">
-        <img src="./images/areaofcicrle.jpg" alt="Area of Circle Image" />
+        <img src="./images/areaofcircle.jpg" alt="Area of Circle Image" />
       </div>
       <div class="page-content-php">
-        <div id="area-triangle">
+        <div id="area-circle">
           <?php
           $radiuslength = $_GET["radius-length"];
           
